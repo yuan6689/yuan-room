@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #ff9854;
+  --line-color: #f3f3f3;
+  --theme-linear-gradient: linear-gradient(90deg, #fa8c1d, #fcaf3f);
+  
+  /* 搜索框左侧图标颜色 */
+  --van-search-left-icon-color: var(--primary-color) !important;
+  --van-tabs-line-height: 1rem;
+  --van-primary-color: #ff9854 !important;
+}
+body {
+  font-size: 0.28rem;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    Segoe UI, Arial, Roboto, PingFang SC, miui, Hiragino Sans GB,
+    Microsoft Yahei, sans-serif;
+}
+
+.top-page {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #fff;
+
+  overflow-y: auto;
+}
+
+.bottom-gray-line {
+  border-bottom: 1px solid var(--line-color);
+}
