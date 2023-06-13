@@ -1,6 +1,6 @@
 <template>
   <div class="tab-bar">
-    <template v-for="(item, index) in tabBarData">
+    <template v-for="(item, index) in tabBarData" :key="index">
       <div
         class="tab-bar-item"
         :class="{ active: currentIndex === index }"
@@ -39,9 +39,9 @@ const itemClick = (item, index) => {
   bottom: 0;
   left: 0;
   right: 0;
-
   display: flex;
   border-top: 1px solid #f3f3f3;
+  background-color: #fff;
   .tab-bar-item {
     flex: 1;
     display: flex;

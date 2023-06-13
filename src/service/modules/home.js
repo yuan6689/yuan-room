@@ -11,3 +11,12 @@ export function getHomeCategories() {
     url: "/home/categories"
   })
 }
+
+export function getHomeHouseList(currentList){
+  return YuanRequest.get({
+    url: "/home/houselist",
+    params: {
+      page: currentList
+    }
+  })
+}
